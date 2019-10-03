@@ -1,0 +1,67 @@
+[{
+  "ID_FAM": 1,
+  "CLAVE_FAM": "01",
+  "NOM_FAM": "Álgica",
+  "id": "algica",
+  "agrupaciones": ["kickapoo"]
+}, {
+  "ID_FAM": 2,
+  "CLAVE_FAM": "02",
+  "NOM_FAM": "Yuto-nahua",
+  "id": "yutonahua",
+  "agrupaciones": ["papago", "pima", "tepehuanodelnorte", "tepehuanodelsur", "tarahumara", "guarijio", "yaqui", "mayo", "cora", "huichol", "nahuatl"]
+}, {
+  "ID_FAM": 3,
+  "CLAVE_FAM": "03",
+  "NOM_FAM": "Cochimí-yumana",
+  "id": "cochimiyumana",
+  "agrupaciones": ["paipai", "kuahl", "cucapa", "kumiai", "kiliwa"]
+}, {
+  "ID_FAM": 4,
+  "CLAVE_FAM": "04",
+  "NOM_FAM": "Seri",
+  "id": "seri",
+  "agrupaciones": ["seri"]
+}, {
+  "ID_FAM": 5,
+  "CLAVE_FAM": "05",
+  "NOM_FAM": "Oto-mangue",
+  "id": "otomangue",
+  "agrupaciones": ["otomi", "mazahua", "matlatzinca", "tlahuica", "pame", "chichimecojonaz", "chinanteco", "tlapaneco", "mazateco", "ixcateco", "chocholteco", "popoloca", "zapoteco", "chatino", "amuzgo", "mixteco", "cuicateco", "triqui"]
+}, {
+  "ID_FAM": 6,
+  "CLAVE_FAM": "06",
+  "NOM_FAM": "Maya",
+  "id": "maya",
+  "agrupaciones": ["huasteco", "maya", "lacandon", "chol", "chontaldetabasco", "tseltal", "tsotsil", "qanjobal", "akateko", "jakalteko", "qatok", "chuj", "tojolabal", "qeqchi", "kiche", "kaqchikel", "teko", "mam", "awakateko", "ixil"]
+}, {
+  "ID_FAM": 7,
+  "CLAVE_FAM": "07",
+  "NOM_FAM": "Totonaco-tepehua",
+  "id": "totonacotepehua",
+  "agrupaciones": ["totonaco", "tepehua"]
+}, {
+  "ID_FAM": 8,
+  "CLAVE_FAM": "08",
+  "NOM_FAM": "Tarasca",
+  "id": "tarasca",
+  "agrupaciones": ["tarasco"]
+}, {
+  "ID_FAM": 9,
+  "CLAVE_FAM": "09",
+  "NOM_FAM": "Mixe-zoque",
+  "id": "mixezoque",
+  "agrupaciones": ["mixe", "sayulteco", "oluteco", "texistepequeno", "ayapaneco", "popolucadelasierra", "zoque"]
+}, {
+  "ID_FAM": 10,
+  "CLAVE_FAM": "10",
+  "NOM_FAM": "Chontal de Oaxaca",
+  "id": "chontaldeoaxaca",
+  "agrupaciones": ["chontaldeoaxaca"]
+}, {
+  "ID_FAM": 11,
+  "CLAVE_FAM": "11",
+  "NOM_FAM": "Huave",
+  "id": "huave",
+  "agrupaciones": ["huave"]
+}]
