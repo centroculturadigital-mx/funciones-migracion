@@ -77,7 +77,7 @@ const generarPaleta = (colorInicial, colorFinal, numGrados) => {
 
 }
 
-export default {
+module.exports = {
   generarPaleta,
   hexToRGB, 
   componentToHex, 

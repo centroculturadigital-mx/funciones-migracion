@@ -1,4 +1,5 @@
 const jsonfile = require('jsonfile')
+const chalk = require('chalk')
 
 const funcionesColor =  require('./colorTransforma')
 
@@ -20,27 +21,31 @@ const familiasColor = {
   huave: '986293',
 }
 
-familias.forEach(f => {
+familias.forEach((f, i) => {
   f.color = familiasColor[f.id]
   const agrColores = funcionesColor.generarPaleta(
       familiasColor[f.id],
       familiasColor[familias[(i+1)%familias.length].id],
       f.agrupaciones.length
   )
-  f.agrupaciones.forEach((aId, i) => {
+  f.agrupaciones.forEach((aId, j) => {
     let agr = agrupaciones.find(a => a.id == aId )
-    agr.color = agrColores[i]
+    agr.color = agrColores[j]
     const varColores = funcionesColor.generarPaleta(
-        agrColores[i],
-        agrColores[(i+1)%agrColores.length],
+        agrColores[j],
+        agrColores[(j+1)%agrColores.length],
         agr.variantes.length
     )
     agr.variantes.forEach((vId, k) => {
       let vari = variantes.find(v => v.id == vId )
-      vari.color = varColores[i]
+      vari.color = varColores[k]
     })
   })
 })
+
 jsonfile.writeFileSync('./familias.json', familias)
-// jsonfile.writeFileSync('./agrupaciones.json', agrupaciones)
-// jsonfile.writeFileSync('./variantes.json', variantes)
+jsonfile.writeFileSync('./agrupaciones.json', agrupaciones)
+jsonfile.writeFileSync('./variantes.json', variantes)
+familias.forEach(f => console.log(chalk.hex(f.color)(f.id, f.color)))
+agrupaciones.forEach(a => console.log(chalk.hex(a.color)(a.id, a.color)))
+variantes.forEach(v => console.log(chalk.hex(v.color)(v.id, v.color)))
